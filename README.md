@@ -1,3 +1,9 @@
 # MMDDemo
 
-Developed with Unreal Engine 5
+Developed with Unreal Engine 5.2
+
+非商用的一款小Demo，在此记录开发过程中的一些注意事项：
+
+开发整体流程为开源MMD模型(模之屋)由VRM5U导入UE并渲染后使用kawayiphysics与SPCRJointDynamics插件进行人物服装首饰及毛发材的物理细节处理——>后端MMD模型计划利用科大讯飞SDK实现个人实时语音听写完成STT——>借由vits及开源MMD模型附加gpt功能完成语音处理并进行TTS——>情绪识别与语音唤醒功能则之后继续完善。
+
+注意事项：SPCRJointDynamics插件需要直接拷贝进UE5.2存储文件的插件目录中而非项目文件中，否则可能导致插件无法找到因此项目崩溃
