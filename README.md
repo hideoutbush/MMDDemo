@@ -6,4 +6,8 @@ Developed with Unreal Engine 5.2
 
 开发整体流程为开源MMD模型(模之屋)由VRM5U导入UE并渲染后使用kawayiphysics与SPCRJointDynamics插件进行人物服装首饰及毛发材的物理细节处理——>后端MMD模型计划利用科大讯飞SDK实现个人实时语音听写完成STT——>借由vits及开源MMD模型附加gpt功能完成语音处理并进行TTS——>情绪识别与语音唤醒功能则之后继续完善。
 
-注意事项：SPCRJointDynamics插件需要直接拷贝进UE5.2存储文件的插件目录中而非项目文件中，否则可能导致插件无法找到因此项目崩溃
+注意事项：
+
+1.SPCRJointDynamics插件需要直接拷贝进UE5.2存储文件的插件目录中而非项目文件中，否则可能导致插件无法找到因此项目崩溃
+
+2.项目显示缺乏插件时，可能是插件的索引config出现了问题，需要将Plugins整个文件夹先移出该文件路径，正常启动UE后再新建Plugins文件夹，将插件黏贴后重新vs编译生成即可正常启动。
